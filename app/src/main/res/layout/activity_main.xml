@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="checkbox for testing"/>
+    
+    <android.support.v7.widget.AppCompatButton
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:text="start service "
+        android:onClick="srtartService"
+        android:id="@+id/btnstartedservice"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="220dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:onClick="stopservice"
+        android:text="srop service"
+        android:layout_gravity="center"
+        android:id="@+id/btnstopstartedservice"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Start IntentService"
+        android:onClick="startIntentSrevice"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:id="@+id/txvResult"
+        android:layout_marginTop="15dp"
+        android:text="Result to display"/>
+
+</LinearLayout>
